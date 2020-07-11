@@ -36,3 +36,9 @@ body {
     margin-top: 15px;
 
 }
+
+.scroll {
+    background-position: center;
+    background: url(scroll.png) ;  
+    /* look at week 1 for z index */
+}
