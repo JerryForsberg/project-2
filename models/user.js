@@ -33,14 +33,3 @@ module.exports = function(sequelize, DataTypes) {
   });
   return User;
 };
-const id = db.define('id', {
-  name: {
-    type: Sequelize.STRING,
-  },
-  address: {
-    type: Sequelize.STRING,
-  },
-  description: {
-    type: Sequelize.TEXT
-  }
-})
