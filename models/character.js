@@ -1,11 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
-  const characters = sequelize.define("characters", {
+  const character = sequelize.define("character", {
     // The email cannot be null, and must be a proper email before creation
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
-      // The password cannot be null
+      unique: true
+    },
       race: {
         type: DataTypes.STRING,
         allowNull: false
@@ -39,6 +39,11 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.BOOLEAN,
         defaultValue: false
       }
-    }
+    
   });
+  return character;
 };
+
+// db.sequelize = sequelize;
+// db.Sequelize = Sequelize;
+// module.exports = character;
