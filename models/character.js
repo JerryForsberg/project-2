@@ -1,21 +1,21 @@
 module.exports = function(sequelize, DataTypes) {
-    const characters = sequelize.define("characters", {
-      // The email cannot be null, and must be a proper email before creation
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
+  const characters = sequelize.define("characters", {
+    // The email cannot be null, and must be a proper email before creation
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
       // The password cannot be null
       race: {
         type: DataTypes.STRING,
         allowNull: false
-      }
-    ,
-    class: {
+      },
+      
+      class: {
         type: DataTypes.STRING,
         allowNull: false
       },
-    level: {
+      level: {
         type: DataTypes.STRING,
         allowNull: false
       },
@@ -36,10 +36,9 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       },
       selected: {
-          type: DataTypes.BOOLEAN,
-          defaultValue: false
-        }
-
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+      }
     }
-})
+  });
 };
