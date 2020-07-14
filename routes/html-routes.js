@@ -27,3 +27,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 };
+
+//redirect to make it fit the function of the application.
+// identify what needs to be added to routes based on vision of how app will work.
+
