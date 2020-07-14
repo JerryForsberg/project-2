@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
 
-    "password": "Chicken23!",
+    "password": "password",
     "database": "character",
 
     "host": "127.0.0.1",
