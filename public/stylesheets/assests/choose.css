@@ -4,6 +4,12 @@ body {
     color: #3C1518;
 }
 
+.scroll {
+    background-position: center;
+    /* background: url(scroll.png) ;   */
+    position: relative;
+}
+
 .card {
     margin: 30px;
     padding: 15px;
@@ -12,7 +18,9 @@ body {
     border-color: #CC5200;
     align-self: center;
     width: auto;
-
+    top: 10px;
+    left: 10px;  
+    z-index: 1;
 }
 
 .card-header {
@@ -26,19 +34,15 @@ body {
 
 }
 
-.list-group-item {
-}
-
 .char {
     background-color: #FFFDC2;
     border-style: double;
     border-color: #CC5200;
     margin-top: 15px;
-
 }
 
-.scroll {
-    background-position: center;
-    background: url(scroll.png) ;  
-    /* look at week 1 for z index */
+.selectChar {
+    border-style: double;
+    border-color: #CC5200;
+
 }
