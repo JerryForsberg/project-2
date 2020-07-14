@@ -1,47 +1,47 @@
-module.exports = function(sequelize, DataTypes) {
-  const character = sequelize.define("character", {
+module.exports = function (sequelize, DataTypes) {
+  const Character = sequelize.define("Character", {
     // The email cannot be null, and must be a proper email before creation
     name: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true
     },
-      race: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      
-      class: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      level: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      hp: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      strength: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      dexterity: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      weapon: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      selected: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
-      }
-    
+    race: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    class: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    level: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    hp: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    strength: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    dexterity: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    weapon: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    selected: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    }
+
   });
-  return character;
+  return Character;
 };
 
 // db.sequelize = sequelize;
