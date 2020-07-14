@@ -1,0 +1,42 @@
+<h1> Welcome to critical Hit!<h1>
+        <h3>Please select an option below<h3>
+
+                <div class="container">
+                    <div class="card" id="create" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Create a Character!</h5>
+                            <p class="card-text">fill in your own character</p>
+                            <a href="./stylesheets/create.html" class="btn btn-primary">Create!</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="choose" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Choose a Character!</h5>
+                            <p class="card-text">Choose an existing character</p>
+                            <a href="./stylesheets/choose.html" class="btn btn-primary">Choose your character!</a>
+                        </div>
+                    </div>
+                </div>
+                <h2>Characters Selected:<h2>
+                        <ul>
+                            {{#each characters}}
+                            {{#if selected}}
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-header">
+                                    Character Name: {{this.name}}
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Race: {{this.race}} </li>
+                                    <li class="list-group-item">Class: {{this.class}}</li>
+                                    <li class="list-group-item">Level: {{this.level}}</li>
+                                    <li class="list-group-item">HP: {{this.hp}}</li>
+                                    <li class="list-group-item">Strength: {{this.strength}}</li>
+                                    <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
+                                    <li class="list-group-item">Weapon: {{this.weapon}}</li>
+                                    {{/if}}
+                                    {{/each}}
+                                </ul>
+                            </div>

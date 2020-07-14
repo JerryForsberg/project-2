@@ -11,14 +11,14 @@
 
 <body>
   <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -27,7 +27,43 @@
     </div>
   </div>
 
-<!-- Show character that they created and have selected to play as -->
+  <div class="container">
+    <div class="card" id="create" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Create a Character!</h5>
+        <p class="card-text">fill in your own character</p>
+        <a href="./stylesheets/create.html" class="btn btn-primary">Create!</a>
+      </div>
+    </div>
+
+    <div class="card" id="choose" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Choose a Character!</h5>
+        <p class="card-text">Choose an existing character</p>
+        <a href="./stylesheets/choose.html" class="btn btn-primary">Choose your character!</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show character that they created and have selected to play as -->
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Character Name:
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Race: </li>
+      <li class="list-group-item">Class: </li>
+      <li class="list-group-item">Level: </li>
+      <li class="list-group-item">HP: </li>
+      <li class="list-group-item">Strength: </li>
+      <li class="list-group-item">Dexterity: </li>
+      <li class="list-group-item">Weapon: </li>
+    </ul>
+  </div>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
