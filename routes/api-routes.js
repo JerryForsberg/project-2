@@ -52,10 +52,7 @@ module.exports = function(app) {
       });
     }
   });
-};
-// Routes
-// =============================================================
-module.exports = function(app) {
+
   // Get all character
   app.get("/api/all", (req, res) => {
     Character.findAll({}).then(results => {
@@ -170,3 +167,4 @@ module.exports = function(app) {
     });
   });
 };
+//time to fry fishie
