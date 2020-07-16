@@ -8,7 +8,7 @@ const { Op } = require("sequelize");
 // =============================================================
 const character = require("../models/character.js");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -52,6 +52,9 @@ module.exports = function(app) {
       });
     }
   });
+
+  // Routes
+  // =============================================================
 
   // Get all character
   app.get("/api/all", (req, res) => {
@@ -167,4 +170,4 @@ module.exports = function(app) {
     });
   });
 };
-//time to fry fishie
+
