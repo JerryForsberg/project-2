@@ -1,0 +1,29 @@
+<head>
+  <title>Chose your Character</title>
+  <link href="/assests/choose.css" rel="stylesheet">
+</head>
+
+<img class="logo" src="./assests/imgs/hitLogo.png">
+
+
+<h1>Select a Character</h1>
+<div>
+    <ul>
+        {{#each characters}}
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Character Name: {{this.name}}
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Race: {{this.race}} </li>
+                <li class="list-group-item">Class: {{this.class}}</li>
+                <li class="list-group-item">Level: {{this.level}}</li>
+                <li class="list-group-item">HP: {{this.hp}}</li>
+                <li class="list-group-item">Strength: {{this.strength}}</li>
+                <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
+                <li class="list-group-item">Weapon: {{this.weapon}}</li>
+                <button class="selectChar"> Select Character </button>
+                {{/each}}
+            </ul>
+
+        </div>
