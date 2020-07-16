@@ -1,0 +1,34 @@
+.logo {
+    margin: 10px;
+    margin-left: 30%;
+    padding: 5px;
+    width: 300px;
+    height: auto;
+    align-self: center;  
+}
+
+.wood {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+  .navbar {
+    border-style: double;
+    background-color: #FFFC99;
+    border-color: #CC5200;
+}
+
+.text {
+    margin: 20px;
+    padding: 10px;
+    font-size: xx-large;
+    color: #3C1518;
+    border-style: double;
+    background-color: #FFFC99;
+    border-color: #CC5200;
+    text-align: center;
+}
