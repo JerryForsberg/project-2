@@ -3,5 +3,35 @@ form.login {
   margin-top: 50px;
 }
 
+.logo {
+  margin: 10px;
+  margin-left: 30%;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+  align-self: center;
+}
 
-/* style members page where characters selected and created are shown */
+.wood {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.row {
+  align-self: center;
+  border-style: double;
+  border-color: #3C1518;
+  background-color: #FBF5EE;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  width: auto;
+  padding: 50px;
+  margin: 20px;
+}
