@@ -8,7 +8,7 @@ const exphbs = require("express-handlebars");
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 5000;
 const db = require("./models");
-const character = require("./models/character");
+// const character = require("./models/character");
 
 // Creating express app and configuring middleware needed for authentication
 const app = express();
@@ -31,13 +31,13 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
-app.get("/create", function(req, res) {
-  res.render("create");
-});
+// app.get("/create", (req, res) => {
+//   res.render("create");
+// });
 
-app.get("/choose", function(req, res) {
-  res.render("choose");
-});
+// app.get("/choose", (req, res) => {
+//   res.render("choose");
+// });
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(() => {
