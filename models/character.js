@@ -1,4 +1,4 @@
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   const Character = sequelize.define("Character", {
     // The email cannot be null, and must be a proper email before creation
     name: {
@@ -39,7 +39,6 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.BOOLEAN,
       defaultValue: false
     }
-
   });
   return Character;
 };
