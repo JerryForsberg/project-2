@@ -11,7 +11,6 @@ const db = require("./models");
 
 //const character = require("./models/character");
 
-
 // Creating express app and configuring middleware needed for authentication
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -32,7 +31,6 @@ app.set("view engine", "handlebars");
 // Requiring our routes
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
-
 
 // app.get("/create", function(req, res) {
 //   res.render("create");
