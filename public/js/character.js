@@ -28,7 +28,7 @@ $(function () {
     });
 });
 
-// selects all users characters from the db 
+// The character selected is now the users character  
 $(function() {
     $(".selectChar").on("click", function(event) {
 

@@ -1,6 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   const Character = sequelize.define("Character", {
-    // The email cannot be null, and must be a proper email before creation
     name: {
       type: DataTypes.STRING,
       allowNull: false,
