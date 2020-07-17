@@ -1,15 +1,15 @@
 <head>
   <title>Chose your Character</title>
-  <link href="/assets/choose.css" rel="stylesheet">
+  <link href="/stylesheets/assets/choose.css" rel="stylesheet">
 </head>
 
-<img class="logo" src="./assets/imgs/hitLogo.png">
+<img class="logo" src="/stylesheets/assets/imgs/hitLogo.png">
 
 
 <h1>Select a Character</h1>
 <div>
     <ul>
-        {{#each characters}}
+        {{#each Characters}}
         <div class="card" style="width: 18rem;">
             <div class="card-header">
                 Character Name: {{this.name}}
