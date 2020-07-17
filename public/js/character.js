@@ -3,7 +3,7 @@
 // create character store to db
 $(function () {
     $(".createChar").on("click", function(event) {
-         event.preventDefult();
+         event.preventDefault();
 
         const newChar = {
            name: $(this).data("name"),
@@ -23,17 +23,31 @@ $(function () {
         }).then(
             function() {
                 window.location.href = "/charSel";
-
             }
         );
     });
 });
 
-// selects all users characters 
+// selects all users characters from the db 
 $(function() {
     $(".selectChar").on("click", function(event) {
-        const id = $(this).data("id");
 
+        event.preventDefault();
 
+        if (selected) {
+            character.id = user.id;
+        }
+        const selChar = {
+           selected: true
+        };
+
+        $.ajax("/api/choose/", {
+            type: "PUT",
+            data: selChar
+        }).then(
+            function() {
+                window.location.href = "/charSel";
+            }
+        );
     });
 });
