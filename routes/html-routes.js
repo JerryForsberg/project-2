@@ -27,18 +27,17 @@ module.exports = function(app) {
     res.render("index");
   });
 
-  app.get("/charSel", (req, res) => {
+  app.get("/charSel", isAuthenticated, (req, res) => {
     res.render("charSel");
   });
 
-  app.get("/create", (req, res) => {
+  app.get("/create",isAuthenticated, (req, res) => {
     res.render("create");
   });
 
-  app.get("/choose", (req, res) => {
+  app.get("/choose", isAuthenticated, (req, res) => {
     res.render("choose");
   });
-
 
 };
 
