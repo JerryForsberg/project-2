@@ -42,10 +42,7 @@ module.exports = function (app) {
     res.redirect("/members");
   });
 
-  // Route for taking user confirm selected character
-  app.get("/charSel", (req, res) => {
-    res.redirect("/charSel");
-  });
+ 
 
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {

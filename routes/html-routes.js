@@ -4,7 +4,7 @@ const path = require("path");
 // Requiring our custom middleware for checking if a user is logged in
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
-module.exports = function(app) {
+module.exports = function (app) {
   app.get("/", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
@@ -31,12 +31,17 @@ module.exports = function(app) {
     res.render("charSel");
   });
 
-  app.get("/create",isAuthenticated, (req, res) => {
+  app.get("/create", isAuthenticated, (req, res) => {
     res.render("create");
   });
 
   app.get("/choose", isAuthenticated, (req, res) => {
     res.render("choose");
+  });
+
+  // Route for taking user confirm selected character
+  app.get("/charSel", isAuthenticated, (req, res) => {
+    res.redirect("/charSel");
   });
 
 };
