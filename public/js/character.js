@@ -1,3 +1,4 @@
+const character = require("../../models/character");
 
 
 // create character store to db
@@ -34,16 +35,11 @@ $(function() {
 
         event.preventDefault();
 
-        if (selected) {
-            character.id = user.id;
-        }
-        const selChar = {
-           selected: true
-        };
+        let select = character.selected === true;
 
-        $.ajax("/api/choose/", {
+        $.ajax("/api/:character", {
             type: "PUT",
-            data: selChar
+            data: select
         }).then(
             function() {
                 window.location.href = "/charSel";
