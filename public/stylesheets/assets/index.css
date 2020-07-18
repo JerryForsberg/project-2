@@ -1,4 +1,3 @@
-
 .navbar {
     border-style: double;
     background-color: #FFFC99;
@@ -17,6 +16,7 @@ body {
     width: 300px;
     height: auto;
     align-self: center;  
+    size: inherit;
 }
 
 .wood {

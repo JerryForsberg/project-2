@@ -1,4 +1,3 @@
-
 <head>
   <title>Create your Character</title>
   <meta charset="UTF-8">
@@ -6,25 +5,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
   <link href="/stylesheets/assets/create.css" rel="stylesheet">
 </head>
+<div class="container-fluid wrapper">
+  <img class="logo" src="/stylesheets/assets/imgs/hitLogo.png">
 
-<img class="logo" src="/stylesheets/assets/imgs/hitLogo.png">
+
+  <h1 class="header">Create Your own Character!</h1>
 
 
-<h1 class="header">Create Your own Character!</h1>
-<div class="card">
+  <div class="col-sm-1 col-md-1 col-lg-2"></div>
+  <div class="card col-sm-10 col-md-10 col-lg-8">
+
     <div class="card-header">
-        Character Name: <input class="name">
+      <div></div>Character Name: <input class="name">
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">Race: <input class="race"> </li>
-        <li class="list-group-item">Class: <input class="class"></li>
-        <li class="list-group-item">Level: <input class="level"> </li>
-        <li class="list-group-item">HP: <input class="hp"></li>
-        <li class="list-group-item">Strength: <input class="strength"></li>
-        <li class="list-group-item">Dexterity: <input class="dexterity"></li>
-        <li class="list-group-item">Weapon: <input class="weapon"></li>
-        <li class="list-group-item"> <a class="createChar btn btn-primary" href = "/charSel"> Create Character </a> </li>
+      <li class="list-group-item">
+        <div>Race:</div> <input class="race">
+      </li>
+      <li class="list-group-item">
+        <div>Class:</div> <input class="class">
+      </li>
+      <li class="list-group-item">
+        <div>Level:</div> <input class="level">
+      </li>
+      <li class="list-group-item">
+        <div>HP:</div> <input class="hp">
+      </li>
+      <li class="list-group-item">
+        <div>Strength:</div> <input class="strength">
+      </li>
+      <li class="list-group-item">
+        <div>Dexterity:</div> <input class="dexterity">
+      </li>
+      <li class="list-group-item">
+        <div>Weapon:</div> <input class="weapon">
+      </li>
+      <li class="list-group-item"> <a class="createChar btn btn-primary" href="/charSel"> Create Character </a> </li>
     </ul>
+  </div>
+  <div class="col-sm-1 col-md-1 col-lg-2"></div>
+
+
 </div>
 
-  <script type="text/javascript" src="js/character.js"></script>
+<script type="text/javascript" src="js/character.js"></script>

@@ -6,10 +6,16 @@
 }
 
 body {
+    
     font-size: large;
     font-weight: bold;
     color: #3C1518;
 }
+
+img {
+    
+}
+
 
 .logo {
     margin: 10px;
@@ -17,7 +23,7 @@ body {
     padding: 5px;
     width: 300px;
     height: auto;
-    align-self: center;  
+    position: relative; 
 }
 
 .wood {
@@ -35,8 +41,7 @@ body {
     border-style: double;
     background-color: #3C1518;
     border-color: #CC5200;
-    align-self: center;
-    width: fit-content;
+    
 
 }
 
@@ -63,6 +68,7 @@ body {
     align-self: center;
 }
 
+
 input {
     text-align: center;
     display: inline-block;
@@ -88,7 +94,7 @@ input {
 }
 
 .header {
-    margin: 20px;
+    /* margin: 20px; */
     padding: 10px;
     font-size: xx-large;
     color: #3C1518;
@@ -96,5 +102,6 @@ input {
     background-color: #FFFF;
     border-color: #CC5200;
     text-align: center;
-
+    
+    
 }
