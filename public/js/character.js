@@ -31,7 +31,7 @@ $(document).ready(() => {
         data: newChar
       }).then(
         function () {
-          // res.redirect("/charSel");
+            window.location.href = "/charSel";
         }
       );
     });
