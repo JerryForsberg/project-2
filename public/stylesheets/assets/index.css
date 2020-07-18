@@ -43,31 +43,33 @@ body {
 }
 
 .card {
-    margin: 30px;
-    padding: 15px;
+    /* margin: 30px;
+    padding: 15px; */
     border-style: double;
     background-color: #3C1518;
     border-color: #CC5200;
-    align-self: center;
+    /* align-self: center; */
     color: #FFFF;
-    width: fit-content;
+    /* width: fit-content; */
 }
 .card-header {
     padding: 2px;
     margin: 2px;
+    word-wrap: break-word;
 }
 
 li {
     color: #3C1518;
+    word-wrap: break-word;
 }
 
-#choose {
+/* #choose {
     float: left;
 }
 
 #create {
     float: left;
-}
+} */
 
 .card-img-top {
     width: fit-content;
@@ -76,12 +78,4 @@ li {
     width: auto;
 }
 
-#charcard {
-    float: left;
-    margin: 0px, 15px, 0px,  15px;
-    width: 25%;
-}
 
-/* .row {
-    background-size: cover;
-} */

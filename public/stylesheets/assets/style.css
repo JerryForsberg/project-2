@@ -23,20 +23,6 @@ form.login {
   
 }
 
-.row {
-  align-self: center;
-  border-style: double;
-  border-color: #3C1518;
-  background-color: #FBF5EE;
-  margin: 10px;
-  padding: 10px;
-}
-
-.container {
-  width: auto;
-  padding: 50px;
-  margin: 20px;
-}
 .navbar {
   border-style: double;
   background-color: #FFFC99;
