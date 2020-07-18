@@ -7,7 +7,7 @@ const { Op } = require("sequelize");
 // Dependencies
 // =============================================================
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -142,13 +142,21 @@ module.exports = function(app) {
   app.post("/api/new", (req, res) => {
     console.log("Character Data:");
     console.log(req.body);
-    db.Character.create({
-      name: req.body.name,
-      race: req.body.race,
-      class: req.body.class,
-      level: req.body.level,
-      hp: req.body.hp
-    }).then(results => {
+    db.Character.create(
+      req.body
+      // name: req.body.name,
+      // race: req.body.race,
+      // class: req.body.class,
+      // level: req.body.level,
+      // hp: req.body.hp,
+      // strength: req.body.strength,
+      // dexterity: req.body.dexterity,
+      // weapon: req.body.weapon,
+      // selected: req.body.selected
+
+
+
+    ).then(results => {
       res.json(results);
     });
   });
