@@ -35,7 +35,7 @@ $(document).ready(() => {
         $.get("/api/all", function(data) {
             // gets data needs to put on the page 
           console.log(data);  
-
+            
         });
 
 });
