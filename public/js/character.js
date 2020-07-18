@@ -2,8 +2,8 @@
 
 $(document).ready(() => {
   //   create character store to db
-  $(function () {
-    $(".createChar").on("click", function (event) {
+  $(() => {
+    $(".createChar").on("click", event => {
       event.preventDefault();
 
       const newChar = {
@@ -24,16 +24,14 @@ $(document).ready(() => {
         weapon: $(".weapon").val(),
 
         selected: true
-      }
+      };
 
       $.ajax("/api/new/", {
         type: "POST",
         data: newChar
-      }).then(
-        function () {
-            window.location.href = "/charSel";
-        }
-      );
+      }).then(() => {
+        window.location.href = "/charSel";
+      });
     });
   });
 });

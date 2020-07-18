@@ -57,9 +57,5 @@ module.exports = function(app) {
   // Route for taking user confirm selected character
   app.get("/charSel", isAuthenticated, (req, res) => {
     res.render("charSel");
-
   });
 };
-
-//redirect to make it fit the function of the application.
-// identify what needs to be added to routes based on vision of how app will work
