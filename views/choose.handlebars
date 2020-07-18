@@ -1,15 +1,15 @@
-<head>
+
   <title>Chose your Character</title>
-  <link href="/assests/choose.css" rel="stylesheet">
-</head>
-
-<img class="logo" src="./assests/imgs/hitLogo.png">
+  <link href="/stylesheets/assets/choose.css" rel="stylesheet">
 
 
-<h1>Select a Character</h1>
+<img class="logo" src="/stylesheets/assets/imgs/hitLogo.png">
+
+
+<h1 class="text">Select a Character</h1>
 <div>
     <ul>
-        {{#each characters}}
+        {{#each Characters}}
         <div class="card" style="width: 18rem;">
             <div class="card-header">
                 Character Name: {{this.name}}
@@ -22,8 +22,9 @@
                 <li class="list-group-item">Strength: {{this.strength}}</li>
                 <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
                 <li class="list-group-item">Weapon: {{this.weapon}}</li>
-                <button class="selectChar"> Select Character </button>
+                <a class="selectChar btn btn-primary" href = "/charSel"> Select Character </a>
                 {{/each}}
             </ul>
-
         </div>
+
+<script type="text/javascript" src="/js/character.js"></script>

@@ -6,9 +6,8 @@ const passport = require("../config/passport");
 const { Op } = require("sequelize");
 // Dependencies
 // =============================================================
-const character = require("../models/character.js");
 
-module.exports = function (app) {
+module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -38,6 +37,11 @@ module.exports = function (app) {
     res.redirect("/");
   });
 
+  // Route for taking user back to members page
+  app.get("/welcome", (req, res) => {
+    res.redirect("/members");
+  });
+
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
@@ -52,20 +56,18 @@ module.exports = function (app) {
       });
     }
   });
-
   // Routes
   // =============================================================
-
   // Get all character
   app.get("/api/all", (req, res) => {
-    Character.findAll({}).then(results => {
+    db.Character.findAll({}).then(results => {
       res.json(results);
     });
   });
 
   // Get a specific character
   app.get("/api/:character", (req, res) => {
-    Character.findAll({
+    db.Character.findAll({
       where: {
         name: req.params.character
       }
@@ -76,20 +78,18 @@ module.exports = function (app) {
 
   // Get all character of a specific race
   app.get("/api/race/:race", (req, res) => {
-    character
-      .findAll({
-        where: {
-          race: req.params.race
-        }
-      })
-      .then(results => {
-        res.json(results);
-      });
+    db.Character.findAll({
+      where: {
+        race: req.params.race
+      }
+    }).then(results => {
+      res.json(results);
+    });
   });
 
   // Get all characters from a specific class
   app.get("/api/character/:class", (req, res) => {
-    Character.findAll({
+    db.Character.findAll({
       where: {
         class: req.params.class
       }
@@ -100,7 +100,7 @@ module.exports = function (app) {
 
   // Get character by level
   app.get("/api/character/level", (req, res) => {
-    Character.findAll({
+    db.Character.findAll({
       where: {
         level: {
           [Op.gte]: 150
@@ -114,39 +114,35 @@ module.exports = function (app) {
 
   // Get all characters by hp
   app.get("/api/character/hp", (req, res) => {
-    character
-      .findAll({
-        where: {
-          hp: {
-            [Op.lte]: 150
-          }
-        },
-        order: [["hp", "ASC"]]
-      })
-      .then(results => {
-        res.json(results);
-      });
+    db.Character.findAll({
+      where: {
+        hp: {
+          [Op.lte]: 150
+        }
+      },
+      order: [["hp", "ASC"]]
+    }).then(results => {
+      res.json(results);
+    });
   });
   // Get all characters by weapon
   app.get("/api/character/weapon", (req, res) => {
-    character
-      .findAll({
-        where: {
-          hp: {
-            [Op.lte]: 150
-          }
-        },
-        order: [["hp", "ASC"]]
-      })
-      .then(results => {
-        res.json(results);
-      });
+    db.Character.findAll({
+      where: {
+        hp: {
+          [Op.lte]: 150
+        }
+      },
+      order: [["hp", "ASC"]]
+    }).then(results => {
+      res.json(results);
+    });
   });
   // Add a character
   app.post("/api/new", (req, res) => {
     console.log("Character Data:");
     console.log(req.body);
-    Character.create({
+    db.Character.create({
       name: req.body.name,
       race: req.body.race,
       class: req.body.class,
@@ -161,7 +157,7 @@ module.exports = function (app) {
   app.delete("/api/character/:id", (req, res) => {
     console.log("Character ID:");
     console.log(req.params.id);
-    Character.destroy({
+    db.Character.destroy({
       where: {
         id: req.params.id
       }
@@ -170,4 +166,3 @@ module.exports = function (app) {
     });
   });
 };
-

@@ -35,3 +35,8 @@ form.login {
   padding: 50px;
   margin: 20px;
 }
+.navbar {
+  border-style: double;
+  background-color: #FFFC99;
+  border-color: #CC5200;
+}

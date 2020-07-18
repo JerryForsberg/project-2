@@ -6,10 +6,13 @@
 }
 
 body {
+    
     font-size: large;
     font-weight: bold;
     color: #3C1518;
 }
+
+
 
 .logo {
     margin: 10px;
@@ -17,7 +20,7 @@ body {
     padding: 5px;
     width: 300px;
     height: auto;
-    align-self: center;  
+    position: relative; 
 }
 
 .wood {
@@ -35,7 +38,8 @@ body {
     border-style: double;
     background-color: #3C1518;
     border-color: #CC5200;
-    align-self: center;
+    
+
 }
 
 .card-header {
@@ -46,7 +50,28 @@ body {
     padding: 10px;
     font-weight: bolder;
     color: #FFFF;
+    width: fit-content;
+    align-self: center;
 
+}
+
+.list-group {
+    align-self: center;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.list-group-item {
+    padding: 10px;
+    align-self: center;
+    width: max-content;
+}
+
+
+input {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
 }
 
 .char {
@@ -60,4 +85,25 @@ body {
     border-style: double;
     border-color: #CC5200;
 
+}
+
+input {
+    width: fit-content;
+    margin: 10px;
+}
+
+.header {
+    margin: 20px;
+    padding: 10px;
+    font-size: xx-large;
+    color: #3C1518;
+    border-style: double;
+    background-color: #FFFF;
+    border-color: #CC5200;
+    text-align: center;
+
+}
+
+.createName {
+    color: black;
 }

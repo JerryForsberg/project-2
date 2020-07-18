@@ -1,14 +1,33 @@
+
+.navbar {
+    border-style: double;
+    background-color: #FFFC99;
+    border-color: #CC5200;
+}
+
 body {
     font-size: large;
     font-weight: bold;
     color: #3C1518;
 }
 
-.scroll {
-    background-position: center;
-    /* background: url(scroll.png) ;   */
-    position: relative;
+.logo {
+    margin: 10px;
+    margin-left: 30%;
+    padding: 5px;
+    width: 300px;
+    height: auto;
+    align-self: center;  
 }
+
+.wood {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background-size: 100% 100%;
+    width: 100%;
+  }
 
 .card {
     margin: 30px;
@@ -17,10 +36,6 @@ body {
     background-color: #3C1518;
     border-color: #CC5200;
     align-self: center;
-    width: auto;
-    top: 10px;
-    left: 10px;  
-    z-index: 1;
 }
 
 .card-header {
@@ -45,4 +60,15 @@ body {
     border-style: double;
     border-color: #CC5200;
 
+}
+
+.text {
+    margin: 20px;
+    padding: 10px;
+    font-size: xx-large;
+    color: #3C1518;
+    border-style: double;
+    background-color: #FFFC99;
+    border-color: #CC5200;
+    text-align: center;
 }

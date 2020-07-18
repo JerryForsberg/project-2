@@ -1,21 +1,38 @@
-// $(() => {
-//   $(".createChar").on("click", function(event) {
-//     const id = $(this).data("id");
-//     const newChar = $(this).data("newChar");
+// const character = require("../../models/character");
 
-//     const newCharSelected = {
-//       selected: newChar
-//     };
+$(document).ready(() => {
+  // create character store to db
+  // $(function () {
+  //     $(".createChar").on("click", function(event) {
+  //          event.preventDefault();
 
-//     $.ajax("/api/create/" + id, {
-//       type: "POST",
-//       data: newCharSelected
-//     }).then(() => {});
-//   });
-// });
+  //         const newChar = {
+  //            name: $(this).data("name"),
+  //            race: $(this).data("race"),
+  //            class: $(this).data("class"),
+  //            level: $(this).data("level"),
+  //            hp: $(this).data("hp"),
+  //            strength: $(this).data("strength"),
+  //            dexterity: $(this).data("dexterity"),
+  //            weapon: $(this).data("weapon"),
+  //            selected: $(this).data(true)
+  //         };
 
-// $(() => {
-//   $(".selectChar").on("click", function() {
-//     const id = $(this).data("id");
-//   });
-// });
+  //         $.ajax("/api/create/", {
+  //             type: "POST",
+  //             data: newChar
+  //         }).then(
+  //             function() {
+  //                 window.location.href = "/charSel";
+  //             }
+  //         );
+  //     });
+  // });
+
+  // selectChar is the user clicking to select the character
+
+  $.get("/api/all", data => {
+    // gets data needs to put on the page
+    console.log(data);
+  });
+});

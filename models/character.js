@@ -1,6 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   const Character = sequelize.define("Character", {
-    // The email cannot be null, and must be a proper email before creation
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -40,9 +39,15 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   });
+
+  // Character.associate = function(models) {
+  //   // We're saying that a Character should belong to a user
+  //   Character.belongsTo(models.User, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   });
+  // };
+
   return Character;
 };
-
-// db.sequelize = sequelize;
-// db.Sequelize = Sequelize;
-// module.exports = character;
