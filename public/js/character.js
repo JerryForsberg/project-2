@@ -1,4 +1,4 @@
-// const character = require("../../models/character");
+// character = require("../../models/character");
 
 $(document).ready(() => {
   //   create character store to db
@@ -26,24 +26,14 @@ $(document).ready(() => {
         selected: true
       }
 
-
-      console.log(newChar);
-
       $.ajax("/api/new/", {
         type: "POST",
         data: newChar
-        // }).then(
-        //   function () {
-        //     window.location.href = "/charSel";
-        //   }
-        // );
-      });
+      }).then(
+        function () {
+          // res.redirect("/charSel");
+        }
+      );
     });
-
-    // selectChar is the user clicking to select the character
-
-    // $.get("/api/all", data => {
-    //   // gets data needs to put on the page
-    //   console.log(data);
-    // });
   });
+});
