@@ -32,18 +32,18 @@ $(document).ready(() => {
       $.ajax("/api/new/", {
         type: "POST",
         data: newChar
-      }).then(
-        function () {
-          window.location.href = "/charSel";
-        }
-      );
+        // }).then(
+        //   function () {
+        //     window.location.href = "/charSel";
+        //   }
+        // );
+      });
     });
+
+    // selectChar is the user clicking to select the character
+
+    // $.get("/api/all", data => {
+    //   // gets data needs to put on the page
+    //   console.log(data);
+    // });
   });
-
-  // selectChar is the user clicking to select the character
-
-  // $.get("/api/all", data => {
-  //   // gets data needs to put on the page
-  //   console.log(data);
-  // });
-});
