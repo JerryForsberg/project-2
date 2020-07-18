@@ -5,11 +5,11 @@ $(document).ready(() => {
     $(".member-name").text(data.email);
   });
 
-  $.get("/api/all", function(data) {
-    if (data.length !==0) {
-      for (let i=0; i < data.length; i++) {
-        Character = data; 
+  $.get("/api/all", data => {
+    if (data.length !== 0) {
+      for (let i = 0; i < data.length; i++) {
+        Character = data;
       }
     }
-  })
+  });
 });

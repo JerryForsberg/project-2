@@ -7,7 +7,7 @@ const { Op } = require("sequelize");
 // Dependencies
 // =============================================================
 
-module.exports = function (app) {
+module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -42,8 +42,6 @@ module.exports = function (app) {
     res.redirect("/members");
   });
 
- 
-
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
@@ -58,8 +56,8 @@ module.exports = function (app) {
       });
     }
   });
-// Routes
-// =============================================================
+  // Routes
+  // =============================================================
   // Get all character
   app.get("/api/all", (req, res) => {
     db.Character.findAll({}).then(results => {
@@ -81,13 +79,12 @@ module.exports = function (app) {
   // Get all character of a specific race
   app.get("/api/race/:race", (req, res) => {
     db.Character.findAll({
-        where: {
-          race: req.params.race
-        }
-      })
-      .then(results => {
-        res.json(results);
-      });
+      where: {
+        race: req.params.race
+      }
+    }).then(results => {
+      res.json(results);
+    });
   });
 
   // Get all characters from a specific class
@@ -118,30 +115,28 @@ module.exports = function (app) {
   // Get all characters by hp
   app.get("/api/character/hp", (req, res) => {
     db.Character.findAll({
-        where: {
-          hp: {
-            [Op.lte]: 150
-          }
-        },
-        order: [["hp", "ASC"]]
-      })
-      .then(results => {
-        res.json(results);
-      });
+      where: {
+        hp: {
+          [Op.lte]: 150
+        }
+      },
+      order: [["hp", "ASC"]]
+    }).then(results => {
+      res.json(results);
+    });
   });
   // Get all characters by weapon
   app.get("/api/character/weapon", (req, res) => {
     db.Character.findAll({
-        where: {
-          hp: {
-            [Op.lte]: 150
-          }
-        },
-        order: [["hp", "ASC"]]
-      })
-      .then(results => {
-        res.json(results);
-      });
+      where: {
+        hp: {
+          [Op.lte]: 150
+        }
+      },
+      order: [["hp", "ASC"]]
+    }).then(results => {
+      res.json(results);
+    });
   });
   // Add a character
   app.post("/api/new", (req, res) => {
