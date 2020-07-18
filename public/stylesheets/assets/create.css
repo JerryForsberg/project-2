@@ -61,6 +61,7 @@ body {
 .list-group-item {
     padding: 10px;
     align-self: center;
+    width: max-content;
 }
 
 input {
