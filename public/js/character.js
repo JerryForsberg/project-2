@@ -36,7 +36,6 @@ $(document).ready(() => {
             // gets data needs to put on the page 
           console.log(data);  
             
-
         });
 
 });
