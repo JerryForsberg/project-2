@@ -29,27 +29,11 @@ $(document).ready(() => {
 //     });
 // });
 
-// The character selected is now the users character  
-// $(function() {
-//     $(".choose").on("click", function(event) {
-
-//         let select = character.selected === false;
-
-//         $.ajax("/api/all", {
-//             type: "GET",
-//             data: select
-//         }).then(
-//             function() {
-//                 window.location.href = "/charSel";
-//             }
-//         );
-//     });
-// });
 // selectChar is the user clicking to select the character
 
 
         $.get("/api/all", function(data) {
-            
+            // gets data needs to put on the page 
           console.log(data);  
         });
 
