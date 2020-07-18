@@ -40,14 +40,14 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Character.associate = function(models) {
-    // We're saying that a Character should belong to a user
-    Character.belongsTo(models.User, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+  // Character.associate = function(models) {
+  //   // We're saying that a Character should belong to a user
+  //   Character.belongsTo(models.User, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   });
+  // };
 
   return Character;
 };
