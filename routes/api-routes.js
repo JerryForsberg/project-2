@@ -142,13 +142,18 @@ module.exports = function(app) {
   app.post("/api/new", (req, res) => {
     console.log("Character Data:");
     console.log(req.body);
-    db.Character.create({
-      name: req.body.name,
-      race: req.body.race,
-      class: req.body.class,
-      level: req.body.level,
-      hp: req.body.hp
-    }).then(results => {
+    db.Character.create(
+      req.body
+      // name: req.body.name,
+      // race: req.body.race,
+      // class: req.body.class,
+      // level: req.body.level,
+      // hp: req.body.hp,
+      // strength: req.body.strength,
+      // dexterity: req.body.dexterity,
+      // weapon: req.body.weapon,
+      // selected: req.body.selected
+    ).then(results => {
       res.json(results);
     });
   });

@@ -72,6 +72,8 @@ input {
     text-align: center;
     display: inline-block;
     width: 100%;
+    width: fit-content;
+    margin: 10px;
 }
 
 .char {
@@ -87,10 +89,7 @@ input {
 
 }
 
-input {
-    width: fit-content;
-    margin: 10px;
-}
+
 
 .header {
     margin: 20px;
@@ -104,6 +103,6 @@ input {
 
 }
 
-.createName {
+.name {
     color: black;
 }
