@@ -22,9 +22,9 @@
                 <li class="list-group-item">Strength: {{this.strength}}</li>
                 <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
                 <li class="list-group-item">Weapon: {{this.weapon}}</li>
-                <a class="selectChar btn btn-primary" href = "/charSel"> Select Character </a>
-                {{/each}}
+                <a class="selectChar btn btn-primary" href = "/charSel/{{this.id}}"> Select Character </a>
             </ul>
         </div>
-
-<script type="text/javascript" src="/js/character.js"></script>
+         {{/each}}
+    </ul>
+</div>  

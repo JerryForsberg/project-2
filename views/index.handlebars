@@ -29,8 +29,7 @@
                 </div>
                 <h2 class="text">Characters Selected:<h2>
                         <ul>
-                            {{#each characters}}
-                            {{#if selected}}
+                            {{#each Characters}}
                             <div class="card">
                                 <div class="card-header">
                                     Character Name: {{this.name}}
@@ -43,9 +42,12 @@
                                     <li class="list-group-item">Strength: {{this.strength}}</li>
                                     <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
                                     <li class="list-group-item">Weapon: {{this.weapon}}</li>
-                                    {{/if}}
-                                    {{/each}}
                                 </ul>
                             </div>
+                            {{/each}}
+                        </ul>
+                    
+
+
 
 <script type="text/javascript" src="js/members.js"></script>
