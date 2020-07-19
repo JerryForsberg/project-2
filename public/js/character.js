@@ -1,4 +1,3 @@
-// character = require("../../models/character");
 
 $(document).ready(() => {
   //   create character store to db
