@@ -1,30 +1,39 @@
+<title>Chose your Character</title>
+<link href="/stylesheets/assets/choose.css" rel="stylesheet">
 
-  <title>Chose your Character</title>
-  <link href="/stylesheets/assets/choose.css" rel="stylesheet">
+<div class="container">
 
+    <div class="text-center">
+        <img class="logo1" src="/stylesheets/assets/imgs/hitLogo.png">
+    </div>
 
-<img class="logo" src="/stylesheets/assets/imgs/hitLogo.png">
+    <div class="row">
+        <h1 class="text">Select a Character</h1>
+    </div>
 
+    <div class="row-sm-12">
 
-<h1 class="text">Select a Character</h1>
-<div>
-    <ul>
         {{#each Characters}}
-        <div class="card" style="width: 18rem;">
-            <div class="card-header">
-                Character Name: {{this.name}}
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    Character Name: {{this.name}}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Race: {{this.race}} </li>
+                    <li class="list-group-item">Class: {{this.class}}</li>
+                    <li class="list-group-item">Level: {{this.level}}</li>
+                    <li class="list-group-item">HP: {{this.hp}}</li>
+                    <li class="list-group-item">Strength: {{this.strength}}</li>
+                    <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
+                    <li class="list-group-item">Weapon: {{this.weapon}}</li>
+                    <li class="list-group-item"><a class="selectChar btn btn-primary" href="/charSel/{{this.id}}">
+                            Select Character </a></li>
+                </ul>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Race: {{this.race}} </li>
-                <li class="list-group-item">Class: {{this.class}}</li>
-                <li class="list-group-item">Level: {{this.level}}</li>
-                <li class="list-group-item">HP: {{this.hp}}</li>
-                <li class="list-group-item">Strength: {{this.strength}}</li>
-                <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
-                <li class="list-group-item">Weapon: {{this.weapon}}</li>
-                <a class="selectChar btn btn-primary" href = "/charSel/{{this.id}}"> Select Character </a>
-            </ul>
         </div>
-         {{/each}}
-    </ul>
-</div>  
+        {{/each}}
+
+    </div>
+
+</div>
