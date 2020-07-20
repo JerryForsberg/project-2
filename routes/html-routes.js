@@ -43,10 +43,12 @@ module.exports = function(app) {
     });
   });
 
+  // creating a character
   app.get("/create", isAuthenticated, (req, res) => {
     res.render("create");
   });
 
+  // selecting from existing characters
   app.get("/choose", isAuthenticated, (req, res) => {
     db.Character.findAll({}).then(results => {
       const data = results.map(r => r.dataValues);
