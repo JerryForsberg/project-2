@@ -1,20 +1,15 @@
-.logo {
-    margin: 10px;
-    margin-left: 30%;
-    padding: 5px;
-    width: 300px;
-    height: auto;
-    align-self: center;  
-}
 
-.wood {
-    position: absolute;
+
+/* .wood {
+    position: fixed;
     left: 0px;
     top: 0px;
     z-index: -1;
-    background-size: 100% 100%;
     width: 100%;
-}
+    background-repeat: repeat;
+    background-size: cover;
+    
+  } */
 
   .navbar {
     border-style: double;
@@ -33,7 +28,11 @@
     text-align: center;
 }
 
-.logo {
+.logo1 {
     margin: 10px;
-    align-content: center;
+    padding: 5px;
+    width: 300px;
+    height: auto;  
+    size: inherit;
+    text-align: center;
 }
