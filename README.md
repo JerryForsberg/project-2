@@ -28,8 +28,14 @@
 
 
 
-## gif 
+## gifs 
 
-  The gif below displays our working application. As you can see we are able to loggin, select an existing character or create a character, and then the character is displayed on the users welcome page. This is the Heroku link to our deployed application, .
+  The gifs below display our working application. As you can see we are able to loggin, select an existing character or create a character, and then the character is displayed on the users welcome page. This is the Heroku link to our deployed application, .
   
-  ![gif]()
+![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source.gif)
+
+![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(1).gif)
+
+![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(2).gif)
+
+![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(3).gif)
