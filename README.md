@@ -20,6 +20,6 @@
 
 ## gif 
 
-  The gif below displays our working application. As you can see we are able to loggin, select an existing character or create a character, and then the character is diaplayed on the users welcome page. This is the Heroku link to our deployed application, .
+  The gif below displays our working application. As you can see we are able to loggin, select an existing character or create a character, and then the character is displayed on the users welcome page. This is the Heroku link to our deployed application, .
   
   ![gif]()
