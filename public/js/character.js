@@ -1,21 +1,35 @@
-// $(() => {
-//   $(".createChar").on("click", function(event) {
-//     const id = $(this).data("id");
-//     const newChar = $(this).data("newChar");
+$(document).ready(() => {
+  //   create character store to db
+  $(() => {
+    $(".createChar").on("click", event => {
+      event.preventDefault();
 
-//     const newCharSelected = {
-//       selected: newChar
-//     };
+      const newChar = {
+        name: $(".name").val(),
 
-//     $.ajax("/api/create/" + id, {
-//       type: "POST",
-//       data: newCharSelected
-//     }).then(() => {});
-//   });
-// });
+        race: $(".race").val(),
 
-// $(() => {
-//   $(".selectChar").on("click", function() {
-//     const id = $(this).data("id");
-//   });
-// });
+        class: $(".class").val(),
+
+        level: $(".level").val(),
+
+        hp: $(".hp").val(),
+
+        strength: $(".strength").val(),
+
+        dexterity: $(".dexterity").val(),
+
+        weapon: $(".weapon").val(),
+
+        selected: true
+      };
+
+      $.ajax("/api/new/", {
+        type: "POST",
+        data: newChar
+      }).then(() => {
+        window.location.href = "/charSel";
+      });
+    });
+  });
+});

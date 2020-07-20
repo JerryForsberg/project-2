@@ -1,48 +1,68 @@
 <head>
-  <title>Critical Hit</title>
-  <link href="./stylesheets/assests/index.css" rel="stylesheet">
+    <title>Critical Hit</title>
+    <link href="/stylesheets/assets/index.css" rel="stylesheet">
 </head>
+<div class="container">
+    <div class="text-center">
+        <img class="logo1" src="/stylesheets/assets/imgs/hitLogo.png">
+    </div>
 
-<img class="logo" src="./assests/imgs/hitLogo.png">
-
-<h1> Welcome to critical Hit! <h1>
-        <h3>Please select an option below<h3>
-
-                <div class="container">
-                    <div class="card" id="create">
-                        <div class="card-body">
-                                <p class="card-text">Create your own character</p>
-                                    <img src="./stylesheets/assests/imgs/silhouette.png" class="card-img-top">
-                            <a href="/create" class="btn btn-primary">Create a character!</a>
-                        </div>
-                    </div>
-
-                    <div class="card" id="choose" >
-                        <div class="card-body">
-                            <p class="card-text">Choose an existing character</p>
-                                    <img src="./stylesheets/assests/imgs/character.png" class="card-img-top">
-
-                            <a href="/choose" class="btn btn-primary">Select a character!</a>
-                        </div>
-                    </div>
+    <div class="text">
+        <h1> Welcome to Critical Hit! <h1>
+                <h3>Please select an option below<h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" id="create">
+                <div class="card-body">
+                    <p class="card-text">Create your own character</p>
+                    <img src="./stylesheets/assets/imgs/silhouette.png" class="card-img-top">
+                    <a href="/create" class="btn btn-primary">Create a character!</a>
                 </div>
-                <h2 class="text">Characters Selected:<h2>
-                        <ul>
-                            {{#each characters}}
-                            {{#if selected}}
-                            <div class="card">
-                                <div class="card-header">
-                                    Character Name: {{this.name}}
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Race: {{this.race}} </li>
-                                    <li class="list-group-item">Class: {{this.class}}</li>
-                                    <li class="list-group-item">Level: {{this.level}}</li>
-                                    <li class="list-group-item">HP: {{this.hp}}</li>
-                                    <li class="list-group-item">Strength: {{this.strength}}</li>
-                                    <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
-                                    <li class="list-group-item">Weapon: {{this.weapon}}</li>
-                                    {{/if}}
-                                    {{/each}}
-                                </ul>
-                            </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card" id="choose">
+                <div class="card-body">
+                    <p class="card-text">Choose an existing character</p>
+                    <img src="./stylesheets/assets/imgs/character.png" class="card-img-top">
+
+                    <a href="/choose" class="choose btn btn-primary">Select a character!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row-sm-12">
+        <h2 class="text">Characters Selected:</h2>
+    </div>
+    
+    <div class="row">
+
+        {{#each Characters}}
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div id="charcard" class="card">
+                <div class="card-header">
+                    Character Name:<br> {{this.name}}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Race: {{this.race}} </li>
+                    <li class="list-group-item">Class: {{this.class}}</li>
+                    <li class="list-group-item">Level: {{this.level}}</li>
+                    <li class="list-group-item">HP: {{this.hp}}</li>
+                    <li class="list-group-item">Strength: {{this.strength}}</li>
+                    <li class="list-group-item">Dexterity: {{this.dexterity}}</li>
+                    <li class="list-group-item">Weapon: {{this.weapon}}</li>
+                </ul>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/members.js"></script>

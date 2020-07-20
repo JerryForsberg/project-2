@@ -6,37 +6,32 @@
 }
 
 body {
+    
     font-size: large;
     font-weight: bold;
     color: #3C1518;
 }
 
-.logo {
+
+
+.logo1 {
     margin: 10px;
-    margin-left: 30%;
     padding: 5px;
     width: 300px;
-    height: auto;
-    align-self: center;  
+    height: auto;  
+    size: inherit;
+    text-align: center;
 }
 
-.wood {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    background-size: 100% 100%;
-    width: 100%;
-  }
+
 
 .card {
-    margin: 30px;
-    padding: 15px;
+   
     border-style: double;
-    background-color: #3C1518;
+    background-color: #3c1518b5;
     border-color: #CC5200;
-    align-self: center;
-    width: fit-content;
+    text-align: center;
+    
 
 }
 
@@ -48,31 +43,47 @@ body {
     padding: 10px;
     font-weight: bolder;
     color: #FFFF;
-    width: fit-content;
+    /* width: fit-content; */
     align-self: center;
 
 }
 
-.list-group {
-    width: fit-content;
+/* .list-group { */
+    /* align-self: center;
+    padding: 10px;
+    margin-left: 30px; */
+/* } */
+
+.list-group-item {
+    /* padding: 10px; */
     align-self: center;
-
+    /* width: 75%; */
+    text-align: center;
+   
 }
 
-.char {
-    background-color: #FFFDC2;
-    border-style: double;
-    border-color: #CC5200;
-    margin-top: 15px;
+
+input {
+    text-align: center;
+    display: inline-block;
+  
+    margin: 10px;
 }
 
-.selectChar {
+
+
+
+.header {
+   
+    font-size: xx-large;
+    color: #3C1518;
     border-style: double;
+    background-color: #ffffffe3;
     border-color: #CC5200;
+    text-align: center;
 
 }
 
 input {
-    width: fit-content;
-    margin: 10px;
+    color: black;
 }

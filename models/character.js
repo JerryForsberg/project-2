@@ -1,6 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   const Character = sequelize.define("Character", {
-    // The email cannot be null, and must be a proper email before creation
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -16,19 +15,19 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     level: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     hp: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     strength: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     dexterity: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     weapon: {
@@ -40,9 +39,6 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   });
+
   return Character;
 };
-
-// db.sequelize = sequelize;
-// db.Sequelize = Sequelize;
-// module.exports = character;
