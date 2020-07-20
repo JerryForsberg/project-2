@@ -1,5 +1,15 @@
 # Project 2
-  This project was to develop a full stack application using Node and Express web server. The application is backed by a MYSQL database with a Sequelize ORM. We use routes for retreiving and adding new data.
+  This project was to develop a full stack application that follows the guidelines listed below:
+* Uses a Node and Express server
+* Uses Handlebars.js as the template engine
+* Is backed by a MySQL database with a Sequelize ORM
+* Utilizes both GET and POST routes for retrieving and adding new data
+* Is deployed using Heroku (with data)
+* Utilizes passport to log user into the site and save their data
+* Has a very attractive user interface
+* Has a folder structure that meets the MVC paradigm
+* Meets good quality coding standards (indentation, scoping, naming)
+* Protect API keys in Node with environment variables
 
 # Critical Hit
   Our application 'Critical Hit' is designed to provide the user with various characters that can be used for a role playing game, such as DnD or Pathfinder. After the user logs in they are given the option to select an existing character or to create a character. For the design of our application we chose a more '90s theme. 
