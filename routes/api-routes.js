@@ -142,9 +142,7 @@ module.exports = function(app) {
   app.post("/api/new", (req, res) => {
     console.log("Character Data:");
     console.log(req.body);
-    db.Character.create(
-      req.body
-    ).then(results => {
+    db.Character.create(req.body).then(results => {
       res.json(results);
     });
   });
