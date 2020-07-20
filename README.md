@@ -30,7 +30,7 @@
 
 ## gifs 
 
-  The gifs below display our working application. As you can see we are able to loggin, select an existing character or create a character, and then the character is displayed on the users welcome page. This is the Heroku link to our deployed application, .
+  The gifs below display our working application. As you can see we are able to loggin, select an existing character or create a character, and then the character is displayed on the users welcome page. This is the Heroku link to our deployed application, https://critical-hit-fantasy-character.herokuapp.com/ .
   
 ![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source.gif)
 
