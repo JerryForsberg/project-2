@@ -34,8 +34,8 @@
   
 ![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source.gif)
 
-![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(1).gif)
+![gif1](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(1).gif)
 
-![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(2).gif)
+![gif2](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(2).gif)
 
-![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(3).gif)
+![gif3](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(3).gif)
