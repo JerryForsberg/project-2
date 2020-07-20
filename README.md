@@ -32,10 +32,10 @@
 
   The gifs below display our working application. As you can see we are able to loggin, select an existing character or create a character, and then the character is displayed on the users welcome page. This is the Heroku link to our deployed application, https://critical-hit-fantasy-character.herokuapp.com/ .
   
-![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source.gif)
+![gif](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/AnimatedGIF-downsized_large.gif)
 
-![gif1](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(1).gif)
+![gif1](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/AnimatedGIF-downsized_large%20(1).gif)
 
-![gif2](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(2).gif)
+![gif2](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/AnimatedGIF-downsized_large%20(2).gif)
 
-![gif3](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/Animated%20GIF-source%20(3).gif)
+![gif3](https://github.com/JerryForsberg/project-2/blob/readme/public/stylesheets/assets/imgs/readmeimgs/AnimatedGIF-downsized_large%20(3).gif)
